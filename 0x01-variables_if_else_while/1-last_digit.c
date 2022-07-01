@@ -6,11 +6,12 @@
  * The string Last digit of n
  * Return: 0
  */
+
 int main(void)
 {
 	int n;
-
 	int lastn;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastn = n % 10;
