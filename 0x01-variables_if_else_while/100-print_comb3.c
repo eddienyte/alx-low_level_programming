@@ -1,24 +1,33 @@
 #include <stdio.h>
 /**
- * main - Prints the numbers from 00 to 99
- * Return: Always (Success)
+ * main - program that prints all possible different combinations of two digits
+ * Numbers must be separated by ,followed by a space
+ * The two digits must be different
+ * 01 and 10 are considered the same combination of the two digits 0 and 1
+ * Return: 0
  */
 
 int main(void)
 {
-	c = i = '0';
-	for (c = '0'; c <= '9'; c++)
+	int n1 = 48;
+	int n2;
+	int com = 44;
+
+	while (n1 <= 57)
 	{
-		for (i = '0'; i <= '9'; i++)
+		n2 = n1 + 1;
+		while (n2 <= 57)
 		{
-			putchar(c);
-			putchar(i);
-			if ((c != '9') || (c == '9' && i != '9'))
+			putchar(n1);
+			putchar(n2);
+			if (n1 != 56 || n2 != 57)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(com);
+				putchar(32);
 			}
+			n2 += 1;
 		}
+		n1 += 1;
 	}
 	putchar('\n');
 	return (0);
