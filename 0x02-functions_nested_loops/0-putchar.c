@@ -1,20 +1,12 @@
-#include "0-putchar.c"
+#include <stdio.h>
 /**
- * main - program that prints Holberton.
+ * main - Entry point
  *
- * Return: int
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int n = 0;
-	char str_hbt[9] = "Holberton";
-
-	while (n < 9)
-	{
-		_putchar(str_hbt[n]);
-		n += 1;
-	}
-	_putchar('\n');
+	printf("_putchar\n");
 	return (0);
 }
