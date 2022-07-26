@@ -1,6 +1,6 @@
 /*
  * File: 0-create_array.c
- * Auth: Edidiong Kufre Okon
+ * Auth: Gedeon Obae Gekonge
  */
 
 #include "main.h"
